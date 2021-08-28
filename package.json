@@ -8,7 +8,7 @@
     "clean": "del-cli ./dist",
     "clean:build": "del-cli ./dist && npm run build",
     "commit": "git add . & cz -S",
-    "dev": "tsnd src/app/index.ts",
+    "dev": "tsnd src/app/app.ts",
     "start": "node -r source-map-support/register dist/app/app.js"
   },
   "author": "Saksham",
@@ -33,13 +33,18 @@
     "typescript": "3.9.6"
   },
   "dependencies": {
+    "@dawnimpulse/express-parser": "^1.0.0",
     "chalk": "4.1.0",
+    "cors": "^2.8.5",
     "dotenv": "8.2.0",
     "error-key": "./libs/error-key-0.9.3.tgz",
     "express": "^4.17.1",
+    "json-keys-sort": "^2.0.0",
     "log-symbols": "4.0.0",
     "mediainfo-parser": "^1.1.5",
     "moment": "2.27.0",
+    "on-headers": "^1.0.2",
+    "shortid": "^2.2.16",
     "util": "0.12.1"
   },
   "config": {
