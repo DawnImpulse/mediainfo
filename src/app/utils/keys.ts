@@ -10,8 +10,9 @@ export default {
     },
     500: {
         undefined: "undefined",
+        unknownMediaInfo: "unknownMediaInfo"
     },
     502: {
-        server: "server",
+        mediaInfoError: "mediaInfoError"
     },
 };

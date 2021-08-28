@@ -1879,11 +1879,6 @@ js-yaml@^3.13.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-json-keys-sort@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/json-keys-sort/-/json-keys-sort-2.0.0.tgz#a31054c4f8d06f1086fa38ff156e55fc7f10a482"
-  integrity sha512-UjuRsjRuYCyEbfY9rmTGsHaAYzkL8kxKOSuHipIsUvfz67GFEnPzXgV82y5JEmbmd5ur5D/9ZEOuCcElwhmkCQ==
-
 json-parse-even-better-errors@^2.3.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz#7c47805a94319928e05777405dc12e1f7a4ee02d"

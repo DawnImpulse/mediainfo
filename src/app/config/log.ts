@@ -3,9 +3,9 @@
  * @info - generating node event for each log
  */
 import env from "./env";
-import Time from "../services/time";
+import Time from "../service/time";
 import { inspect } from "util";
-import { DEBUG, ERROR, EVENT, INFO, SUCCESS, WARN } from "../utils/constant";
+import { DEBUG, ERROR, EVENT, INFO, SUCCESS, WARN } from "../utils/constants";
 import Global from "./global";
 import { blue, gray, green, red, yellow } from "chalk";
 

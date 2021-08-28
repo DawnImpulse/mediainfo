@@ -119,6 +119,7 @@ export default class Server {
         try {
             log.all("Starting Express Server");
             await this.rest.listen(env.port);
+            log.all(`Actively listening on http://localhost:${env.port}`);
         } catch (e) {
             return Promise.reject(e);
         }

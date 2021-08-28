@@ -4,6 +4,8 @@
  */
 
 import {exec as mediainfoExec} from 'mediainfo-parser';
+import ErrorObject from "../utils/errorObject";
+import keys from "../utils/keys";
 
 /**
  * @param url - public url to the media file (url can be signed/expiry set)
@@ -25,12 +27,12 @@ export default async function (url: string): Promise<object> {
                         // return obj
                         resolve(obj)
                         // reject error
-                    else reject("some unknown error but mostly it is related to invalid url; check url again")
+                    else reject(new ErrorObject(keys["502"].mediaInfoError,"unknown mediainfo error but mostly it is related to invalid url; check if is url is publicly accessible"))
                 }
             })
         }catch (err){
             // reject error
-            reject(err.toString())
+            reject(new ErrorObject(keys["500"].unknownMediaInfo, err))
         }
     })
 }
