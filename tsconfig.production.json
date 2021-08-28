@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "module": "commonjs",
+    "target": "es5",
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "sourceMap": true,
+    "inlineSources": true,
+    "mapRoot": "maps",
+    "skipLibCheck": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types"
+    ],
+  },
+  "exclude": [
+    "src/app/ts"
+  ]
+}

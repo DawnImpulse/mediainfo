@@ -1,0 +1,10 @@
+# folders
+node_modules
+exclude
+logs
+src/exclude
+dist/exclude
+
+# files
+.env
+yarn-error.log

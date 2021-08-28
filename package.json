@@ -1,0 +1,49 @@
+{
+  "name": "mediainfo",
+  "version": "0.1.0",
+  "description": "use to train dataset or get prediction",
+  "main": "dist/app/app.js",
+  "scripts": {
+    "build": "tsc && echo compiled",
+    "clean": "del-cli ./dist",
+    "clean:build": "del-cli ./dist && npm run build",
+    "commit": "git add . & cz -S",
+    "dev": "tsnd src/app/app.ts",
+    "start": "node -r source-map-support/register dist/app/app.js"
+  },
+  "author": "Saksham",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@typescript-eslint/eslint-plugin": "4.0.1",
+    "@typescript-eslint/parser": "4.0.1",
+    "cz-conventional-changelog": "3.3.0",
+    "del-cli": "3.0.1",
+    "eslint": "7.2.0",
+    "eslint-config-airbnb": "18.2.0",
+    "eslint-config-airbnb-typescript": "9.0.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-import": "2.21.2",
+    "eslint-plugin-jsx-a11y": "6.3.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "prettier": "2.1.1",
+    "source-map-support": "0.5.19",
+    "ts-node": "8.10.2",
+    "typescript": "3.9.6"
+  },
+  "dependencies": {
+    "chalk": "4.1.0",
+    "dotenv": "8.2.0",
+    "error-key": "./libs/error-key-0.9.3.tgz",
+    "express": "^4.17.1",
+    "log-symbols": "4.0.0",
+    "moment": "2.27.0",
+    "util": "0.12.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
