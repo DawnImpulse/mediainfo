@@ -2,8 +2,8 @@
 node_modules
 exclude
 logs
+dist
 src/exclude
-dist/exclude
 
 # files
 .env
